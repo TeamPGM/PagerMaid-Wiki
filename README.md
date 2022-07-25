@@ -8,12 +8,6 @@ PagerMaid-Pyro 是一个开源的 Telegram 人形自走 Bot 方案，功能强�
 
 # 功能
 
-## 快速偷取贴纸
-
-回复贴纸/图片/文件 `-s` 就可快速执行，心爱的贴纸全变自己的。
-
-![](gif/s.gif)
-
 ## 远程管理
 
 输入 `-sh 命令` 就可快速通过 Telegram 管理自己的服务器。
@@ -48,4 +42,4 @@ PagerMaid-Pyro 是一个开源的 Telegram 人形自走 Bot 方案，功能强�
 
 ## 手动搭建
 
-欢迎加入 [讨论群](https://t.me/Invite_Challenge_Bot?start=1) 探讨你的疑问。
+欢迎加入 [讨论群](https://t.me/+pCLtkzj4Yo41ZTM9) 探讨你的疑问。
