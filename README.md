@@ -10,31 +10,31 @@ PagerMaid-Pyro 是一个开源的 Telegram 人形自走 Bot 方案，功能强�
 
 ## 远程管理
 
-输入 `-sh 命令` 就可快速通过 Telegram 管理自己的服务器。
+输入 `,sh 命令` 就可快速通过 Telegram 管理自己的服务器。
 
 ![](gif/sh.gif)
 
 ## 扩展
 
-安装插件使用 `-apt install 插件名`，快速安装，方便使用。
+安装插件使用 `,apt install 插件名`，快速安装，方便使用。
 
 ![](gif/apt.gif)
 
 ## 运行状态
 
-随时使用 `-status` 监控 bot 是否正常运行。
+随时使用 `,status` 监控 bot 是否正常运行。
 
 ![](gif/status.gif)
 
 ## 时间
 
-您可以使用地区名和数字查询某时区时间 `-time` 。
+您可以使用地区名和数字查询某时区时间 `,time` 。
 
 ![](gif/time.gif)
 
 ## 快速更新
 
-主程序随时可以使用 `-update` 来检查更新。
+主程序随时可以使用 `,update` 来检查更新。
 
 ![](gif/update.gif)
 

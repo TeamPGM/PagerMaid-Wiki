@@ -80,8 +80,6 @@ python3 -m pagermaid
 ctrl + c
 ```
 
-有时（或大部分时间），当您在服务器部署 `PagerMaid-Pyro` 时，登录会有问题，当出现了问题，请在应用程序的配置步骤配置唯一的 `api_key` 和 `api_hash` ，然后在您的本地电脑上执行 `python3 utils/mksession.py` ，在账号登录成功以后，将生成的 `pagermaid.session` 文件复制到服务器对应目录即可。
-
 !> 请注意保护好您已登录的 `pagermaid.session` 。此文件可以进行账号所有操作，请不要分享给他人使用。
 
 # 进程守护
