@@ -61,12 +61,12 @@ pgp
 
 #### 阻断
 
-当有任意函数发出了阻止事件传递信号时，
-该事件将不再会传递给下一优先级，直接结束处理。
+当有任意函数发出了阻止传递信号时，
+该消息将不再会传递给下一优先级，直接结束处理。
 
-默认所有情况都不会阻断事件传递，如果你想修改，可以传入参数 `block_process=True` 。
+默认所有情况都不会阻断消息传递，如果你想修改，可以传入参数 `block_process=True` 。
 
-在默认情况下，可以使用 message.stop_propagation() 方法动态阻止事件传播。
+在默认情况下，可以使用 `message.stop_propagation()` 方法动态阻止消息传递。
 
 ### 主修饰器的举例
 
@@ -80,11 +80,11 @@ from pagermaid.listener import listener
           usage="命令帮助")
 ```
 
-## 定义事件处理函数
+## 定义处理函数
 
-在 PGP 中，我们使用了 依赖注入 来帮助你动态管理需要的变量。
+在 PGP 中，我们使用了 `依赖注入` 来帮助你动态管理需要的变量。
 
-在默认情况下，你只需要获取触发函数的事件变量 `message: Message` 即可
+在默认情况下，你只需要获取触发函数的消息变量 `message: Message` 即可
 
 ```python
 from pagermaid.enums import Message
@@ -98,11 +98,11 @@ async def example(message: Message):
     pass
 ```
 
-## 进行事件操作
+## 进行消息操作
 
-在对信息处理时，你可能需要调用 `message.edit()` 方法来编辑消息。
+在对消息处理时，你可能需要调用 `message.edit()` 方法来编辑消息。
 
-### 了解事件属性
+### 了解消息属性
 
 [Pyrogram 文档](https://docs.pyrogram.org/api/types/Message#pyrogram.types.Message)
 
@@ -113,7 +113,7 @@ async def example(message: Message):
     await message.edit("新的消息内容")
 ```
 
-### 更多操作
+### 更多消息操作
 
 [Pyrogram 文档](https://docs.pyrogram.org/api/bound-methods/#message)
 
@@ -129,11 +129,11 @@ from pagermaid.listener import listener
           description="命令描述",
           usage="命令帮助")
 async def example(bot: Client):
-    # 向 Telegram 官方发送 你好
+    # 向 Telegram 账号发送 你好
     await bot.send_message(777000, "你好")
 ```
 
-### 更多操作
+### 更多客户端操作
 
 [Pyrogram 文档](https://docs.pyrogram.org/api/methods)
 
