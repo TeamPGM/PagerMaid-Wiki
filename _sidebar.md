@@ -7,3 +7,4 @@
     * [Centos 7](centos7)
     * [Wsl](wsl)
     * [Archlinux](archlinux)
+* [插件](plugins)
