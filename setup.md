@@ -18,7 +18,7 @@ pip3 install -r requirements.txt
 
     ```bash
     cp config.gen.yml config.yml        # 复制模板
-    vi config.yml                     # 修改文件
+    vi config.yml                       # 修改文件
     ```
 
 2. 设置 API
