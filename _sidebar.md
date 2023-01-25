@@ -2,10 +2,8 @@
 
 * [开始](README)
 * 手动安装
-    * [Ubuntu 16.04](ubuntu16)
-    * [Ubuntu 20.04](ubuntu20)
-    * [Centos 7](centos7)
-    * [Wsl](wsl)
-    * [Archlinux](archlinux)
+    * [安装软件包依赖](install_dependencies)
+    * [配置环境](configure_environment)
+    * [安装并配置 PagerMaid](setup)
 * [插件](plugins)
 * [websocket](websocket)
