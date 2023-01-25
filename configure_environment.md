@@ -2,11 +2,11 @@
 
 ## 为 PagerMaid 创建用户
 
-为了您的操作不当而造成不可预期的后果，应避免应用直接运行在 `root` 用户，我们应当为 PagerMaid 创建用户。
+为了您的操作不当而造成不可预期的后果，应避免应用直接运行在 `root` 用户，此处我们为 PagerMaid 创建用户。
 
 1. 创建用户
 
-    创建 `pagermaid` 用户，并创建家目录：
+    创建 `pagermaid` 用户，并为其创建家目录：
 
     ```bash
     sudo useradd -m pagermaid
