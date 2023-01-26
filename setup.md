@@ -21,9 +21,9 @@ pip3 install -r requirements.txt
     vi config.yml                       # 修改文件
     ```
 
-2. 设置 API
+2. 设置 API（可选）
 
-    在 [Telegram 用户管理面板](https://my.telegram.org/) 生成 API 信息，将 `App api_id` 和 `App api_hash` 分别填入 `api_key` 和 `api_hash`
+    在 [Telegram 开发者面板](https://my.telegram.org/) 生成 API 信息，将 `App api_id` 和 `App api_hash` 分别填入 `api_key` 和 `api_hash`
 
 3. 代理配置（可选）
 
@@ -31,6 +31,14 @@ pip3 install -r requirements.txt
 
     ```yaml
     git_source: "https://gitlab.com/Xtao-Labs/PagerMaid_Plugins/-/raw/master/"
+    ```
+
+4. 二维码登录（用于无法接收到验证码）（可选）
+
+    此步是将登录方式切换到手机扫码登录，解决无法收到验证码的问题，手机扫码途径：`运行 APP - 设置 - 设备 - 扫码登录新客户端`。
+
+    ```yaml
+    qrcode_login: "True"
     ```
 
 ## 登录账号
