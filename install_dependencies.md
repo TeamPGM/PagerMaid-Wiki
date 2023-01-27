@@ -2,7 +2,7 @@
 
 ## Arch Linux
 
-## neofetch
+### neofetch
 
 ?> 此软件包用于显示系统信息，如您没有显示系统信息需求，您可以无需安装此软件包。
 
@@ -10,7 +10,7 @@
 sudo pacman -S neofetch
 ```
 
-## zbar
+### zbar
 
 ?> 此软件包用于处理二维码信息，如您没有处理二维码信息需求，您可以无需安装此软件包。
 
@@ -18,7 +18,7 @@ sudo pacman -S neofetch
 sudo pacman -S zbar
 ```
 
-## Git
+### Git
 
 ?> 此软件包用于拉取 PagerMaid 仓库及用于 PagerMaid 的后续更新。
 
