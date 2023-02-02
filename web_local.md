@@ -53,25 +53,4 @@ web_interface:
 
 ### Docker 用户
 
-由于 docker 需要进行端口映射，你需要使用 [docker-compose.yml](https://github.com/TeamPGM/PagerMaid-Pyro/blob/master/docker-compose.gen.yml) 进行手动部署
-
-这是一个配置文件例子
-
-```yaml
-version: "2.0"
-services:
-  pagermaid:
-    image: teampgm/pagermaid_pyro
-    restart: always
-    container_name: pagermaid
-    hostname: pagermaid
-    ports:                 # 开启网页控制面板
-      - "3333:3333"
-    volumes:
-      - ./:/pagermaid/workdir
-    environment:
-      - WEB_ENABLE=true
-      - WEB_SECRET_KEY=控制台密码
-      - WEB_HOST=0.0.0.0
-      - WEB_PORT=3333
-```
+由于 docker 需要进行端口映射，创建的旧容器无缝升级比较复杂，推荐使用新脚本进行重装，重装时将会询问是否开启 web 控制台
