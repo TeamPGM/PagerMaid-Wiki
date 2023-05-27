@@ -40,7 +40,7 @@
 
 ### 非 Docker 用户
 
-请找到 PGP 的配置文件 `config.yml` ，修改为如下值
+请找到 PGP 的配置文件 `config.yml` ，此文件的默认路径为 `/var/lib/pagermaid/config.yml`，修改如下值
 
 ```yaml
 web_interface:

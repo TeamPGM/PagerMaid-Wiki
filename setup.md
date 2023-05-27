@@ -3,7 +3,9 @@
 ## 拉取项目
 
 ```bash
+cd /var/lib
 git clone https://github.com/TeamPGM/PagerMaid-Pyro.git pagermaid
+cd pagermaid
 ```
 
 ## 安装依赖包
@@ -30,7 +32,7 @@ pip3 install -r requirements.txt
     此步是将安装插件的获取源文件更改为国内可以访问的反代源，但是可能因为 cdn 原因，插件更新不及时。
 
     ```yaml
-    git_source: "https://gitlab.com/Xtao-Labs/PagerMaid_Plugins/-/raw/master/"
+    git_source: "https://gitlab.com/Xtao-Labs/PagerMaid_Plugins_Pyro/-/raw/v2/"
     ```
 
 4. 二维码登录（用于无法接收到验证码）（可选）
@@ -68,9 +70,7 @@ WantedBy=multi-user.target
 
 [Service]
 Type=simple
-User=pagermaid
-Group=pagermaid
-WorkingDirectory=/home/pagermaid/pagermaid
+WorkingDirectory=/var/lib/pagermaid
 ExecStart=/usr/bin/python3 -m pagermaid
 Restart=always
 TEXT
