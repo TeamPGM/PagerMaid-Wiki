@@ -29,10 +29,10 @@ pip3 install -r requirements.txt
 
 3. 代理配置（可选）
 
-    此步是将安装插件的获取源文件更改为国内可以访问的反代源，但是可能因为 cdn 原因，插件更新不及时。
+    此步是将安装插件的获取源文件更改为国内可以访问的反代源。
 
     ```yaml
-    git_source: "https://gitlab.com/Xtao-Labs/PagerMaid_Plugins_Pyro/-/raw/v2/"
+    git_source: "https://v2.xtaolabs.com/"
     ```
 
 4. 二维码登录（用于无法接收到验证码）（可选）
