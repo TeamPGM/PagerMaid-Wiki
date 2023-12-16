@@ -16,11 +16,11 @@ pip3 install -r requirements.txt
 
 ## 修改配置文件
 
-1. 将配置 `config.gen.yml` 文件复制一份并且命名为 `config.yml`
+1. 将配置 `config.gen.yml` 文件复制一份到 ./data/ 下，并且命名为 `config.yml`
 
     ```bash
-    cp config.gen.yml config.yml        # 复制模板
-    vi config.yml                       # 修改文件
+    cp config.gen.yml ./data/config.yml   # 复制模板
+    vi ./data/config.yml                  # 修改文件
     ```
 
 2. 设置 API（可选）
@@ -78,6 +78,8 @@ TEXT
 
 ## 常用指令
 
+- 启动程序并设置为开机自启：`sudo systemctl enable --now pagermaid`
 - 启动程序：`sudo systemctl start pagermaid`
-- 设置为开机自启：`sudo systemctl enable pagermaid`
 - 停止程序：`sudo systemctl stop pagermaid`
+- 重启程序：`sudo systemctl restart pagermaid`
+- 查看运行状态：`sudo systemctl status pagermaid`
